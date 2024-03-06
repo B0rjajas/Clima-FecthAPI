@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <title>Api CLIMA</title>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto"><!--Clase general-->
+        <div class="max-w-lg mx-auto">
+            <h1 id="titulo" class="text-4xl mt-5 text-black text-center font-bold">CLIMA</h1>
+            <div class="p-6 mt-10">
+                <div id="resultado">
+                    <p class="text-center  text-black mt-6">Tu resultado se muestra asqui</p>
+                </div>
+            </div>
+    <form action="" id="formulario"  method="post" class="mt-10" accept="#">
+        <div class="mt-5">
+            <input 
+            class="w-full p-2 rounded" type="text" id="ciudad"  placeholder="ciudad" value="">
+        </div>
+
+        <div class="mt-5">
+            <select class="block apperance-none w-full bg-gray-200 border border-gray-200 text-gray-700 
+            py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            name="" id="pais">
+                <option value="" selected>--Seleccionar</option>
+                <option value="AR">Argentina</option>
+                <option value="CO">Colombia</option>
+                <option value="CR">Costa Rica</option>
+                <option value="ES">España</option>
+                <option value="US">Estados Unidos</option>
+                <option value="MX">Mexico</option>
+                <option value="PE">Peru</option>
+            </select>
+            </div>
+
+            <div class="mt-5">
+                <input type="submit" value="Obtener CLima"
+                class="mt-5 w-full bg-yellow-500 p-3 uppercase font-bold cursor-pointer rounded">
+            </div>
+    </form>
+        </div><!---->
+</div><!--Clase general-->
+
+    <script src="s01.js"></script>
+</body>
+</html>
